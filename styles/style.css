@@ -1,5 +1,5 @@
-/* Google font  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+/* Google font link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body {
     margin: 0;
@@ -12,6 +12,9 @@ body {
     margin-bottom: 50px; 
     justify-content: space-between;
 }
+/*----------------------
+ Header styles Start 
+ ------------------------*/
 header{
     background: #2D25A0; 
     margin-bottom: 70px;
@@ -52,7 +55,20 @@ header{
     height: 440px;
     margin: 50px 50px 0px 0px;
 }
-.players-des{
+/*----------------------
+ Header styles End
+ ------------------------*/
+
+ /*----------------------
+ Blog Highlight Start
+ ------------------------*/
+.blog-highlight {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+ .players-des{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
@@ -79,6 +95,21 @@ header{
     flex-direction: column;
     justify-content: center;
 }
+/*----------------------
+ Blog Highlight End
+ ------------------------*/
+
+ /* Video styles start */
+.Match-Highlights {
+    width: 100%;
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+} 
+/* video styles End */
+
+/* ----Footer styles start -------*/
 footer{ 
     display: flex;
     flex-direction: column;
@@ -100,3 +131,110 @@ footer{
 .copyright{
     margin:20px 0px 0px 10px;
  }
+ /* ----Footer styles End -------*/
+
+ /*-----------------------
+ media query (mobile) Start
+  ------------------ */
+
+ @media only screen and (max-width:667px) {
+    .container{ 
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    .banner-title{
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        margin-left: 20px;
+    } 
+     .button-arrow{
+        width:30%;
+        margin-left: 20px;
+    }
+    .image img{
+        width: 320px;
+        height: 245px;
+        margin-left: 20px;
+    }
+    .blog-highlight{
+        justify-content: flex-start;
+    }
+    .players-des{
+        grid-template-columns: repeat(1,1fr);
+     }
+    .player{
+        width: 330px;
+    }
+    .highlighter {
+        margin-left: 20px;
+    }
+    .Match-Highlights {
+        display: inline;
+        height: 100%;
+        width: 100%;
+      
+    }
+    .semi-final {
+        margin-bottom: 50px;
+    }
+    
+    .logo img{ 
+        width: 215px;
+    }
+    .social-media, .fa-instagram, .fa-linkedin-in, .fa-youtube, .fa-whatsapp{
+        margin-left: 10px;
+    }
+    .copyright {
+        margin: 10px 0px 0px 10px;}
+    
+ }
+/*-----------------------
+ media query (mobile) end
+  ------------------ */
+
+  /*----------------------
+  media query (i-pad) Start
+   ------------------ */
+
+@media only screen and (min-width:668px) and (max-width:992px) {
+   
+.container{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+.image img{
+    width: 670px;
+    height: 510px;
+    margin: 50px 50px 10px 20px;
+}
+.blog-highlight{
+    margin-bottom: 10px;
+}
+.players-des{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    grid-row-gap: 20px;
+ }
+.player{
+    width: 345px;
+}
+.highlighter{
+    margin: 0px 0px 20px 50px;
+ }
+
+.Match-Highlights {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.logo img {
+    width: 410px;}
+}
+ /*----------------
+  media query (i-pad) end
+   ------------------ */
